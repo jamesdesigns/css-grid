@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid +</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid +</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600
+&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+<!-- GRID CONTAINER / FULL PAGE
+------------------------------------------------------------- -->
+<div class="grid-container">
+ <!-- Header -->
+ <div class="item1"><h1 class="logo">CSS Grid &#x2b;</h1></div>
+ <!-- Menu -->
+ <div class="item2">
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Blog</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ </div>
+ <!-- Main -->
+ <div class="item3">
+ <div>
+ <img src="http://via.placeholder.com/425x200/989898/FFFFFF" alt="imageMain"
+class="img-third-col">
+ <p class="max-row-600">Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Itaque officiis consequatur dolorum voluptatibus, ullam facere molestiae veniam
+placeat atque <br><br> esse eaque praesentium cum, eius blanditiis nulla minus
+adipisci omnis fuga! Ad facilis cupiditate commodi non, temporibus quasi iure
+accusantium quas deserunt, officiis atque blanditiis nihil, voluptatum ratione qui
+ullam laboriosam.<br><br> Lipsum dolor sit, amet consectetur adipisicing elit. Itaque
+officiis consequatur dolorum voluptatibus, ullam facere molestiae veniam placeat atque
+</p>
+ </div>
+ <div>
+ <h2 class="padding-top-30 one-third-col content">Content 1</h2>
+ <p class="max-row-600">Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Itaque officiis consequatur dolorum voluptatibus, ullam facere molestiae veniam
+placeat atque esse eaque praesentium cum, eius blanditiis nulla minus adipisci omnis
+fuga! Ad facilis cupiditate commodi non, temporibus quasi iure accusantium quas
+deserunt, officiis atque blanditiis nihil, voluptatum ratione qui ullam
+laboriosam.</p>
+ </div>
+ <div>
+ <h2 class="padding-top-30 one-third-col content">Content 2</h2>
+ <p class="max-row-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+Itaque officiis consequatur dolorum voluptatibus, ullam facere molestiae veniam
+placeat atque esse eaque praesentium cum, eius blanditiis nulla minus adipisci omnis
+fuga! Ad facilis cupiditate commodi non, temporibus quasi iure accusantium quas
+deserunt, officiis atque blanditiis nihil, voluptatum ratione qui ullam
+laboriosam.</p>
+ </div>
+ <div>
+ <h2 class="padding-top-30 one-third-col content">Content 3</h2>
+ <p class="margin-bottom-30 max-row-600">Lorem ipsum dolor sit, amet consectetur
+adipisicing elit. Itaque officiis consequatur dolorum voluptatibus, ullam facere
+molestiae veniam placeat atque esse eaque praesentium cum, eius blanditiis nulla minus
+adipisci omnis fuga! Ad facilis cupiditate commodi non, temporibus quasi iure
+accusantium quas deserunt, officiis atque blanditiis nihil, voluptatum ratione qui
+ullam laboriosam.</p>
+ </div>
+ </div>
+ <!-- Right -->
+ <div class="item4">
+ <h3 class="margin-left-30 clear-margin lg-margin-60">Blog</h3>
+ <br>
+ <img src="http://via.placeholder.com/150x100/606060/FFFFFF" alt="imageMain"
+class="margin-left-30 clear-margin lg-margin-60">
+ <h5 class="margin-left-30 clear-margin lg-margin-60"><a href="#"
+class="no-underline">Design</a></h5>
+<p class="margin-left-30 clear-margin lg-margin-60">Lorem ipsum dolor sit amet
+  consectetur adipisicing elit. Ratione impedit, recusandae error a accusamus quam
+  ...</p>
+   <br>
+   <img src="http://via.placeholder.com/150x100/606060/FFFFFF" alt="imageMain"
+  class="margin-left-30 clear-margin lg-margin-60">
+   <h5 class="margin-left-30 clear-margin lg-margin-60"><a href="#"
+  class="no-underline">Dev</a></h5>
+   <p class="margin-left-30 clear-margin lg-margin-60">Lorem ipsum dolor sit amet
+  consectetur adipisicing elit. Consectetur, deleniti sequi. Excepturi ut officia
+  consequatur ...</p>
+   <br>
+   <p class="margin-left-30 clear-margin lg-margin-60"><a href="#"
+  class="view-more">MORE ARTICLES</a></p>
+  <br>
+  </div>
+
+ <!-- Footer -->
+ <div class="item5">
+ <p style="color:white;">&copy; Copyright 2021 | HIRE ME: &nbsp;<a
+href="https://www.jameshooperdesigns.com" target="_blank"
+class="mysite">JamesHooperDesigns.com</a></p>
+ <div class="social">
+ <ul class="margin-top-30 no-margin">
+ <li><a href="#" target="_blank"><img
+src="http://via.placeholder.com/50x50/606060/FFFFFF" alt="social"
+class="social-icon"></a></li>
+ <li><a href="#" target="_blank"><img
+src="http://via.placeholder.com/50x50/606060/FFFFFF" alt="social"
+class="social-icon"></a></li>
+ <li><a href="#" target="_blank"><img
+src="http://via.placeholder.com/50x50/606060/FFFFFF" alt="social"
+class="social-icon"></a></li>
+<li><a href="#" target="_blank"><img
+  src="http://via.placeholder.com/50x50/606060/FFFFFF" alt="social"
+  class="social-icon"></a></li>
+  </ul>
+  </div>
+  </div>
+</div> <!-- END OF GRID CONTAINER / FULL PAGE ---------------------------------------------- -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

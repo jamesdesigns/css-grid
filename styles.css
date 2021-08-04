@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  /* Common Rules ------------------------------------------ */
+  .margin-left-10 { margin-left: 10px; }
+  .margin-left-20 { margin-left: 20px; }
+  .margin-left-30 { margin-left: 30px; }
+  .margin-top-10 { margin-top: 10px; }
+  .margin-top-20 { margin-top: 20px; }
+  .margin-top-30 { margin-top: 30px; }
+  .margin-bottom-30 { margin-bottom: 30px; }
+  .padding-top-10 { padding-top: 10px; }
+  .padding-top-20 { padding-top: 20px; }
+  .padding-top-30 { padding-top: 30px; }
+  .no-underline { text-decoration: none; color: white; }
+  .no-underline:hover { color: yellow; }
+
+  body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: black;
+  margin: 2em;
+  }
+
+  p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  p:hover {
+    animation-name: yellowHover;
+    animation-duration: 15s;
+  }
+
+  /* Declare the Grid Area ---------------------------------- */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+
+/* DEFINES the GRID CONTAINER / the entire page layout ------------------ */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+   'header header menu menu menu menu'
+   'main main main main right right'
+   'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  }
+
+  .grid-container > div {
+  padding: 20px 0;
+  font-size: 30px;
+  }
+
+  /* Header -------------------------------------------------- */
+  .item1 {
+  border-bottom: 1px solid #ccc;
+  }
+
+  .logo {
+  position: relative;
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  }
+
+  /* Menu ---------------------------------------------------- */
+  .item2 {
+    border-bottom: 1px solid #ccc;;
+    }
+    ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-size: 18px;
+    margin-top: 30px;
+    }
+
+    li { margin: 10px; }
+
+li a {
+text-decoration: none;
+color: white;
+}
+
+li a:hover {
+color: gray;
+}
+
+/* Main ---------------------------------------------------- */
