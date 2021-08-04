@@ -93,3 +93,140 @@ color: gray;
 }
 
 /* Main ---------------------------------------------------- */
+.item3 {
+  margin: 0 1rem 0 0;
+  }
+  .content:hover {
+  position: relative;
+  animation-name: hoverState;
+  animation-duration: 2s;
+  }
+
+  /* Right -------------------------------------------------- */
+.item4 {
+  width: 20rem;
+  border-left: 1px dotted #ccc;
+  }
+
+  /* Footer ------------------------------------------------- */
+.item5 {
+  height: 100px;
+border-top: 1px solid #ccc;
+}
+
+.mysite {
+text-decoration: none;
+color: gray;
+}
+
+.mysite:hover {
+color: yellow;
+}
+
+.social {
+  margin-top: -70px;
+  }
+
+  .social-icon {
+  border-radius: 50%;
+  }
+
+  .view-more {
+  text-decoration: none;
+  color: white;
+  }
+
+  .view-more:hover {
+    color: gray;
+    }
+
+    /* Media Queries for Mobile ---------------------------- */
+@media (max-width: 700px) {
+.grid-container {
+ grid-template-areas:
+ 'menu'
+ 'header'
+ 'main'
+ 'right'
+ 'footer'
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 18px;
+  align-content: center;
+  justify-content: center;
+ }
+
+ ul {
+  display: flex;
+  justify-content: flex-start;
+ }
+
+ .item4 {
+  width: 100%;
+  border: none;
+  border-top: 1px dotted #ccc;
+ }
+
+ .clear-margin {
+  margin: 0;
+ }
+
+ .social {
+  margin-top: 1%;
+ }
+
+ .no-margin { margin: 0; }
+ }
+
+ @media (min-width: 1280px) {
+  .item3 div {
+   display: flex;
+   flex-direction: row;
+  }
+  .img-third-col {
+   width: 40%;
+   margin-right: 100px;
+   margin-bottom: 50px;
+  }
+
+  .one-third-col {
+    width: 40%;
+    border-right: 1px dotted #ccc;
+    margin-right: 100px;
+    margin-bottom: 30px;
+   }
+
+   .item3 div .max-row-600 {
+    width: 600px;
+    padding-bottom: 30px;
+   }
+
+   item4 {
+    width: 30rem;
+   }
+   .lg-margin-60 { margin-left: 60px; }
+   }
+   /* Keyframe Animations ------------------------------------ */
+   @keyframes fadeInLeft {
+    0% { color: #ccc; left:-100px; }
+    50% { color: #ccc; left:15px; }
+    100% { color: #ccc; left:0px; }
+    }
+
+    @keyframes hoverState {
+    0% { color: yellow; }
+    50% { color: yellow; }
+    100% { color: yellow; }
+    }
+    
+    @keyframes yellowHover {
+    0% { color: yellow; }
+    50% { color: yellow; }
+    100% { color: yellow; }
+    }
+
+
