@@ -35,6 +35,11 @@
     animation-duration: 15s;
   }
 
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
   /* Declare the Grid Area ---------------------------------- */
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
@@ -189,7 +194,8 @@ color: yellow;
   }
   .img-third-col {
    width: 40%;
-   margin-right: 100px;
+   /* margin-right: 100px; */
+   margin-right: 5rem;
    margin-bottom: 50px;
   }
 
@@ -222,7 +228,7 @@ color: yellow;
     50% { color: yellow; }
     100% { color: yellow; }
     }
-    
+
     @keyframes yellowHover {
     0% { color: yellow; }
     50% { color: yellow; }
