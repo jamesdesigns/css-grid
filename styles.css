@@ -194,9 +194,12 @@ color: yellow;
   }
   .img-third-col {
    width: 40%;
-   /* margin-right: 100px; */
-   margin-right: 5rem;
-   margin-bottom: 50px;
+   margin-right: 100px;
+   margin-bottom: 10rem;
+  }
+
+  .responsive {
+    min-width: 500px;
   }
 
   .one-third-col {
