@@ -40,7 +40,7 @@
     height: auto;
   }
 
-  /* Declare the Grid Area ---------------------------------- */
+/* Declare the Grid Area ---------------------------------- */
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
@@ -48,7 +48,7 @@
 .item5 { grid-area: footer; }
 
 
-/* DEFINES the GRID CONTAINER / the entire page layout ------------------ */
+/* DEFINES the GRID CONTAINER and the entire page layout ------------------ */
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -145,8 +145,8 @@ color: yellow;
     color: gray;
     }
 
-    /* Media Queries for Mobile ---------------------------- */
-@media (max-width: 700px) {
+/* Media Queries for Mobile ---------------------------- */
+@media (max-width: 768px) {
 .grid-container {
  grid-template-areas:
  'menu'
@@ -187,6 +187,7 @@ color: yellow;
  .no-margin { margin: 0; }
  }
 
+ /*  Media Query for a Minimum width of 1280px or greater */
  @media (min-width: 1280px) {
   .item3 div {
    display: flex;
@@ -218,7 +219,9 @@ color: yellow;
     width: 30rem;
    }
    .lg-margin-60 { margin-left: 60px; }
-   }
+   } 
+
+
    /* Keyframe Animations ------------------------------------ */
    @keyframes fadeInLeft {
     0% { color: #ccc; left:-100px; }
